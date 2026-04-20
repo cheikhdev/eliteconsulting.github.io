@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELARA Academy — Cabinet de Formation Professionnel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">ELARA</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR ===== -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">E</span>
+        <span class="logo-text">LARA <em>Academy</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#inscription" class="nav-cta">S'inscrire</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">À propos</a></li>
+      <li><a href="#formations" class="mobile-link">Formations</a></li>
+      <li><a href="#equipe" class="mobile-link">Équipe</a></li>
+      <li><a href="#temoignages" class="mobile-link">Témoignages</a></li>
+      <li><a href="#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="#inscription" class="mobile-link cta">S'inscrire</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Cabinet de formation certifié — Depuis 2010
+      </div>
+      <h1 class="hero-title reveal-up">
+        Élevez vos<br />
+        <em>compétences,</em><br />
+        transformez votre<br />
+        <span class="title-outline">carrière.</span>
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        ELARA Academy accompagne les professionnels et les entreprises dans leur montée en compétences avec des formations sur mesure, dispensées par des experts reconnus.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#formations" class="btn btn-primary">
+          Découvrir nos formations
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#inscription" class="btn btn-ghost">S'inscrire maintenant</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat">
+          <span class="stat-number" data-target="2400">0</span>
+          <span class="stat-label">Apprenants formés</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Taux de satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="40">0</span>
+          <span class="stat-label">Formations disponibles</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="hero-card-float card-float-1">
+        <div class="float-icon">🎓</div>
+        <div>
+          <div class="float-title">Certification obtenue</div>
+          <div class="float-sub">Management Avancé</div>
+        </div>
+      </div>
+      <div class="hero-card-float card-float-2">
+        <div class="float-icon">⭐</div>
+        <div>
+          <div class="float-title">4.9 / 5 étoiles</div>
+          <div class="float-sub">Note moyenne</div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="illus-ring illus-ring-1"></div>
+        <div class="illus-ring illus-ring-2"></div>
+        <div class="illus-ring illus-ring-3"></div>
+        <div class="illus-center">
+          <svg viewBox="0 0 200 200" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" stroke="var(--gold)" stroke-width="1" stroke-dasharray="4 8" opacity=".4"/>
+            <path d="M60 130 L100 70 L140 130 Z" stroke="var(--gold)" stroke-width="2" fill="none" opacity=".8"/>
+            <circle cx="100" cy="100" r="20" fill="var(--gold)" opacity=".15"/>
+            <circle cx="100" cy="100" r="8" fill="var(--gold)" opacity=".9"/>
+            <path d="M40 100 H60 M140 100 H160 M100 40 V60 M100 140 V160" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-eyebrow reveal-up">Notre histoire</div>
+          <h2 class="section-title reveal-up">Un cabinet fondé sur <em>l'excellence</em> pédagogique</h2>
+          <p class="about-text reveal-up">
+            Fondée en 2010 par des experts passionnés, ELARA Academy est née d'une conviction profonde : la formation professionnelle doit être transformatrice, pas simplement informative. En quinze ans d'existence, nous avons accompagné plus de 2 400 professionnels et 180 entreprises dans leur développement.
+          </p>
+          <p class="about-text reveal-up">
+            Notre approche mêle rigueur académique et pragmatisme terrain. Chaque programme est conçu avec des experts actifs dans leur domaine, garantissant un contenu ancré dans la réalité du marché.
+          </p>
+          <div class="about-values reveal-up">
+            <div class="value-item">
+              <div class="value-icon">◆</div>
+              <div>
+                <strong>Excellence</strong>
+                <p>Des standards de qualité irréprochables à chaque étape</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">◆</div>
+              <div>
+                <strong>Innovation</strong>
+                <p>Des méthodes pédagogiques en constante évolution</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">◆</div>
+              <div>
+                <strong>Impact</strong>
+                <p>Des résultats mesurables et durables pour chaque apprenant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal-right">
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <span class="kpi-number counter" data-target="15">0</span>
+              <span class="kpi-unit">ans</span>
+              <span class="kpi-label">d'expertise</span>
+            </div>
+            <div class="kpi-card kpi-accent">
+              <span class="kpi-number counter" data-target="2400">0</span>
+              <span class="kpi-label">apprenants formés</span>
+            </div>
+            <div class="kpi-card kpi-accent">
+              <span class="kpi-number counter" data-target="40">0</span>
+              <span class="kpi-label">formations au catalogue</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-number counter" data-target="18">0</span>
+              <span class="kpi-label">formateurs experts</span>
+            </div>
+          </div>
+          <div class="certif-badge reveal-up">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Certifié Qualiopi — Reconnu par l'État
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMATIONS ===== -->
+  <section id="formations" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow light">Catalogue 2025</div>
+        <h2 class="section-title light">Nos <em>formations</em></h2>
+        <p class="section-desc light">Des programmes conçus pour répondre aux enjeux réels du monde professionnel.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar reveal-up">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="informatique">Informatique</button>
+        <button class="filter-btn" data-filter="management">Management</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="developpement">Développement personnel</button>
+        <button class="filter-btn" data-filter="bureautique">Bureautique</button>
+        <button class="filter-btn" data-filter="softskills">Soft Skills</button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="formations-grid" id="formationsGrid">
+
+        <!-- Card 1 -->
+        <div class="formation-card reveal-up" data-category="management">
+          <div class="card-header">
+            <div class="card-cat">Management</div>
+            <div class="card-level level-avance">Avancé</div>
+          </div>
+          <h3 class="card-title">Leadership & Management d'Équipe</h3>
+          <p class="card-desc">Développez vos compétences de leader, fédérez vos équipes et pilotez la performance collective avec efficacité.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              5 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Hybride
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('leadership')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="formation-card reveal-up" data-category="informatique">
+          <div class="card-header">
+            <div class="card-cat">Informatique</div>
+            <div class="card-level level-inter">Intermédiaire</div>
+          </div>
+          <h3 class="card-title">Data Analytics & Power BI</h3>
+          <p class="card-desc">Maîtrisez l'analyse de données et la visualisation pour transformer vos données brutes en décisions stratégiques.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              3 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              En ligne
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('dataanalytics')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="formation-card reveal-up" data-category="marketing">
+          <div class="card-header">
+            <div class="card-cat">Marketing</div>
+            <div class="card-level level-debutant">Débutant</div>
+          </div>
+          <h3 class="card-title">Marketing Digital & Réseaux Sociaux</h3>
+          <p class="card-desc">Construisez une stratégie digitale percutante, maîtrisez les réseaux sociaux et le SEO pour booster votre visibilité.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              4 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Présentiel
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('marketing')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="formation-card reveal-up" data-category="softskills">
+          <div class="card-header">
+            <div class="card-cat">Soft Skills</div>
+            <div class="card-level level-inter">Intermédiaire</div>
+          </div>
+          <h3 class="card-title">Communication & Prise de Parole</h3>
+          <p class="card-desc">Affirmez votre présence, captivez vos audiences et maîtrisez l'art de la communication impactante en toute situation.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              2 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Présentiel
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('communication')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="formation-card reveal-up" data-category="developpement">
+          <div class="card-header">
+            <div class="card-cat">Développement personnel</div>
+            <div class="card-level level-debutant">Tous niveaux</div>
+          </div>
+          <h3 class="card-title">Gestion du Stress & Bien-être</h3>
+          <p class="card-desc">Apprenez à gérer votre énergie, prévenir le burn-out et cultiver un équilibre durable entre vie pro et personnelle.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              2 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Hybride
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('stress')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="formation-card reveal-up" data-category="bureautique">
+          <div class="card-header">
+            <div class="card-cat">Bureautique</div>
+            <div class="card-level level-inter">Intermédiaire</div>
+          </div>
+          <h3 class="card-title">Excel Expert & Automatisation</h3>
+          <p class="card-desc">Maîtrisez les fonctions avancées d'Excel, les tableaux croisés dynamiques et automatisez vos tâches avec les macros VBA.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              3 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              En ligne
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('excel')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="formation-card reveal-up" data-category="informatique">
+          <div class="card-header">
+            <div class="card-cat">Informatique</div>
+            <div class="card-level level-avance">Avancé</div>
+          </div>
+          <h3 class="card-title">Intelligence Artificielle en Entreprise</h3>
+          <p class="card-desc">Comprenez les enjeux de l'IA, identifiez les cas d'usage stratégiques et pilotez l'intégration de l'IA dans votre organisation.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              4 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Hybride
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('ia')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="formation-card reveal-up" data-category="management">
+          <div class="card-header">
+            <div class="card-cat">Management</div>
+            <div class="card-level level-avance">Avancé</div>
+          </div>
+          <h3 class="card-title">Gestion de Projet Agile</h3>
+          <p class="card-desc">Certifiez-vous aux méthodes Scrum et Kanban, pilotez des projets complexes et livrez de la valeur en continu.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              5 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Présentiel
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('agile')">Voir les détails →</button>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="formation-card reveal-up" data-category="softskills">
+          <div class="card-header">
+            <div class="card-cat">Soft Skills</div>
+            <div class="card-level level-debutant">Tous niveaux</div>
+          </div>
+          <h3 class="card-title">Négociation & Influence</h3>
+          <p class="card-desc">Développez votre pouvoir de persuasion, maîtrisez les techniques de négociation et construisez des accords durables.</p>
+          <div class="card-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              3 jours
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Hybride
+            </span>
+          </div>
+          <button class="card-btn" onclick="openFormationModal('negociation')">Voir les détails →</button>
+        </div>
+
+      </div>
+
+      <div class="section-cta reveal-up">
+        <a href="#inscription" class="btn btn-primary">Demander un programme personnalisé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODAL FORMATION ===== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeFormationModal()">
+    <div class="modal" id="formationModal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeFormationModal()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===== CTA INTERMÉDIAIRE ===== -->
+  <section class="section-cta-full">
+    <div class="cta-full-bg"></div>
+    <div class="container">
+      <div class="cta-full-content reveal-up">
+        <div class="section-eyebrow">Formation sur mesure</div>
+        <h2>Vous cherchez une formation <em>adaptée à votre entreprise ?</em></h2>
+        <p>Notre équipe pédagogique conçoit des programmes 100 % sur mesure pour répondre aux enjeux spécifiques de votre organisation.</p>
+        <a href="#inscription" class="btn btn-primary">Parlons de votre projet →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÉQUIPE ===== -->
+  <section id="equipe" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">Les experts</div>
+        <h2 class="section-title">Notre équipe de <em>formateurs</em></h2>
+        <p class="section-desc">Des professionnels actifs dans leur domaine, engagés dans la transmission.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card reveal-up">
+          <div class="team-avatar">
+            <div class="avatar-initials">SM</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="team-info">
+            <h3>Sophie Martin</h3>
+            <span class="team-role">Management & Leadership</span>
+            <p>15 ans d'expérience en direction d'équipes. Ex-DRH Groupe BNP. Coach certifiée ICF.</p>
+            <div class="team-tags">
+              <span>Management</span>
+              <span>RH</span>
+              <span>Coaching</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal-up">
+          <div class="team-avatar">
+            <div class="avatar-initials">KB</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="team-info">
+            <h3>Karim Benali</h3>
+            <span class="team-role">Data & Intelligence Artificielle</span>
+            <p>Expert Data Science, ancien Google. PhD en machine learning. 12 ans en entreprise.</p>
+            <div class="team-tags">
+              <span>IA</span>
+              <span>Data</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal-up">
+          <div class="team-avatar">
+            <div class="avatar-initials">AL</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="team-info">
+            <h3>Amélie Lefèvre</h3>
+            <span class="team-role">Marketing & Communication</span>
+            <p>Fondatrice d'agence digitale, 200+ projets accompagnés. Conférencière TEDx.</p>
+            <div class="team-tags">
+              <span>SEO</span>
+              <span>Social</span>
+              <span>Stratégie</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal-up">
+          <div class="team-avatar">
+            <div class="avatar-initials">TR</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="team-info">
+            <h3>Thomas Renaud</h3>
+            <span class="team-role">Soft Skills & Développement</span>
+            <p>Psychologue du travail, spécialiste de la performance individuelle et collective.</p>
+            <div class="team-tags">
+              <span>Soft Skills</span>
+              <span>PNL</span>
+              <span>Mindfulness</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <section id="temoignages" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow light">Ce qu'ils disent</div>
+        <h2 class="section-title light">Témoignages de nos <em>apprenants</em></h2>
+        <div class="global-rating">
+          <div class="stars">★★★★★</div>
+          <span>4,9 / 5 — Basé sur 340 avis vérifiés</span>
+        </div>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal-up">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"La formation Leadership a littéralement changé ma façon de manager. En six mois, le turnover dans mon équipe a chuté de 40 %. Les formateurs sont d'une qualité rare."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MG</div>
+            <div>
+              <strong>Marie Gosselin</strong>
+              <span>Directrice RH, Groupe Thales</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testi-featured reveal-up">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Formation Power BI absolument remarquable. Je suis arrivé sans connaissances, je suis reparti avec un dashboard opérationnel et les bases pour l'enrichir seul. Pédagogie exemplaire."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JP</div>
+            <div>
+              <strong>Jean-Philippe Aubert</strong>
+              <span>Contrôleur de Gestion, LVMH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"ELARA a formé toute notre équipe marketing sur 3 mois. Résultat : notre ROI digital a progressé de 60 %. Un investissement qui se rembourse très vite."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SL</div>
+            <div>
+              <strong>Sarah Lecomte</strong>
+              <span>CMO, Startup FinTech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up">
+          <div class="testi-stars">★★★★☆</div>
+          <p class="testi-text">"Gestion du stress : un programme qui m'a redonné le contrôle. Méthodes concrètes, applicables dès le lendemain. Je le recommande à tous mes collègues."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">CB</div>
+            <div>
+              <strong>Cécile Blanc</strong>
+              <span>Cheffe de Projet, Bouygues</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSCRIPTION ===== -->
+  <section id="inscription" class="section">
+    <div class="container">
+      <div class="inscription-grid">
+        <div class="inscription-left reveal-up">
+          <div class="section-eyebrow">Rejoindre ELARA</div>
+          <h2 class="section-title">Commencez votre <em>parcours</em> dès aujourd'hui</h2>
+          <p>Remplissez ce formulaire, notre équipe vous contacte sous 24h pour personnaliser votre programme.</p>
+          <div class="inscription-reassurance">
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Réponse garantie sous 24h
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Devis sur mesure gratuit
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Données 100% confidentielles
+            </div>
+          </div>
+        </div>
+
+        <div class="inscription-right reveal-right">
+          <form class="inscription-form" action="https://formspree.io/f/mqewlolk" method="POST" id="inscriptionForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nom">Nom complet *</label>
+                <input type="text" id="nom" name="nom" placeholder="Marie Dupont" />
+                <span class="form-error" id="nomError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="marie@exemple.fr" />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+33 6 00 00 00 00" />
+                <span class="form-error" id="telephoneError"></span>
+              </div>
+              <div class="form-group">
+                <label for="entreprise">Entreprise</label>
+                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre société" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formation">Formation souhaitée *</label>
+              <select id="formation" name="formation">
+                <option value="">Sélectionner une formation</option>
+                <option value="leadership">Leadership & Management d'Équipe</option>
+                <option value="dataanalytics">Data Analytics & Power BI</option>
+                <option value="marketing">Marketing Digital & Réseaux Sociaux</option>
+                <option value="communication">Communication & Prise de Parole</option>
+                <option value="stress">Gestion du Stress & Bien-être</option>
+                <option value="excel">Excel Expert & Automatisation</option>
+                <option value="ia">Intelligence Artificielle en Entreprise</option>
+                <option value="agile">Gestion de Projet Agile</option>
+                <option value="negociation">Négociation & Influence</option>
+                <option value="sur-mesure">Programme sur mesure</option>
+              </select>
+              <span class="form-error" id="formationError"></span>
+            </div>
+            <div class="form-group">
+              <label>Mode de formation *</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="mode" value="presentiel" />
+                  <span>Présentiel</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="mode" value="enligne" />
+                  <span>En ligne</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="mode" value="hybride" />
+                  <span>Hybride</span>
+                </label>
+              </div>
+              <span class="form-error" id="modeError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message (optionnel)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Décrivez votre contexte ou vos besoins spécifiques..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Envoyer ma demande d'inscription
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Demande envoyée avec succès !</h3>
+            <p>Notre équipe vous contactera dans les 24 heures pour finaliser votre inscription et répondre à toutes vos questions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-eyebrow">Questions fréquentes</div>
+        <h2 class="section-title">Tout ce que vous <em>devez savoir</em></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Comment se déroule l'inscription ?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Remplissez le formulaire d'inscription en ligne ou contactez-nous par téléphone. Notre équipe vous rappelle sous 24h pour valider votre choix de formation, discuter de vos objectifs et vous envoyer un devis personnalisé. L'inscription est confirmée à réception du règlement ou d'une convention de formation.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Les formations sont-elles finançables par le CPF ?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oui ! La majorité de nos formations sont éligibles au Compte Personnel de Formation (CPF) et à différents dispositifs OPCO. Notre équipe administrative vous accompagne dans toutes les démarches de financement. Nous travaillons également avec des financements Pôle Emploi, AGEFICE, et sur facturation entreprise.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Quelle est la taille maximale des groupes ?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nous limitons nos groupes à 12 participants maximum pour garantir un suivi individualisé de qualité. Pour les sessions intra-entreprise, nous adaptons le format selon vos effectifs, jusqu'à des cohortes de 20 personnes avec des co-animateurs dédiés.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Quels sont les tarifs pratiqués ?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nos tarifs varient selon la durée, le format et le nombre de participants. Les formations inter-entreprises démarrent à partir de 690€ HT par jour/personne. Pour les formations intra, nous établissons un devis sur mesure. Demandez votre devis gratuit via le formulaire d'inscription.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Recevrai-je une attestation à l'issue de la formation ?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Absolument. À l'issue de chaque formation, vous recevrez une attestation de suivi et, pour les parcours certifiants, un certificat de compétences reconnu. Ces documents vous sont remis sous 48h après la clôture du stage.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Est-il possible d'accéder aux supports après la formation ?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, tous nos apprenants bénéficient d'un accès à notre espace apprenant en ligne pendant 6 mois après la formation. Vous y trouverez les supports de cours, ressources complémentaires, exercices pratiques et la possibilité de contacter votre formateur pour des questions de suivi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="section-cta-final">
+    <div class="container">
+      <div class="cta-final-content reveal-up">
+        <h2>Prêt à franchir le cap ?</h2>
+        <p>Rejoignez les 2 400 professionnels qui ont fait confiance à ELARA Academy pour accélérer leur carrière.</p>
+        <div class="cta-actions">
+          <a href="#inscription" class="btn btn-primary">S'inscrire maintenant</a>
+          <a href="tel:+33123456789" class="btn btn-ghost-light">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            Appeler le +33 1 23 45 67 89
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="nav-logo">
+              <span class="logo-mark">E</span>
+              <span class="logo-text">LARA <em>Academy</em></span>
+            </a>
+            <p>Cabinet de formation professionnelle certifié Qualiopi, au service de votre excellence depuis 2010.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Formations</h4>
+            <ul>
+              <li><a href="#formations">Management</a></li>
+              <li><a href="#formations">Informatique & Data</a></li>
+              <li><a href="#formations">Marketing Digital</a></li>
+              <li><a href="#formations">Soft Skills</a></li>
+              <li><a href="#formations">Bureautique</a></li>
+              <li><a href="#formations">Développement personnel</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Cabinet</h4>
+            <ul>
+              <li><a href="#about">Notre histoire</a></li>
+              <li><a href="#equipe">L'équipe</a></li>
+              <li><a href="#temoignages">Témoignages</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#">Actualités</a></li>
+              <li><a href="#">Partenaires</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                12 Rue de la Formation, 75008 Paris
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" stroke="currentColor" stroke-width="1.5"/></svg>
+                +33 1 23 45 67 89
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+                contact@elara-academy.fr
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 ELARA Academy. Tous droits réservés.</span>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
