@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELARA Academy — Cabinet de Formation Professionnel</title>
+  <title>Elite Consulting Group — Cabinet de Formation Professionnel</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   <!-- ===== LOADER ===== -->
   <div id="loader">
     <div class="loader-inner">
-      <span class="loader-logo">ELite Consulting Group</span>
+      <span class="loader-logo">Elite Consulting Group</span>
       <div class="loader-bar"><div class="loader-fill"></div></div>
     </div>
   </div>
@@ -74,7 +74,7 @@
         <span class="title-outline">carrière.</span>
       </h1>
       <p class="hero-subtitle reveal-up">
-        ELite Consulting Group accompagne les professionnels et les entreprises dans leur montée en compétences avec des formations sur mesure, dispensées par des experts reconnus.
+        Elite Consulting Group accompagne les professionnels et les entreprises dans leur montée en compétences avec des formations sur mesure, dispensées par des experts reconnus.
       </p>
       <div class="hero-actions reveal-up">
         <a href="#formations" class="btn btn-primary">
@@ -144,7 +144,7 @@
           <div class="section-eyebrow reveal-up">Notre histoire</div>
           <h2 class="section-title reveal-up">Un cabinet fondé sur <em>l'excellence</em> pédagogique</h2>
           <p class="about-text reveal-up">
-            Fondée en 2010 par des experts passionnés, ELite Consulting Group est née d'une conviction profonde : la formation professionnelle doit être transformatrice, pas simplement informative. En quinze ans d'existence, nous avons accompagné plus de 2 400 professionnels et 180 entreprises dans leur développement.
+            Fondée en 2010 par des experts passionnés, Elite Consulting Group est née d'une conviction profonde : la formation professionnelle doit être transformatrice, pas simplement informative. En quinze ans d'existence, nous avons accompagné plus de 2 400 professionnels et 180 entreprises dans leur développement.
           </p>
           <p class="about-text reveal-up">
             Notre approche mêle rigueur académique et pragmatisme terrain. Chaque programme est conçu avec des experts actifs dans leur domaine, garantissant un contenu ancré dans la réalité du marché.
@@ -202,6 +202,7 @@
     </div>
   </section>
 
+
   <!-- ===== FORMATIONS ===== -->
   <section id="formations" class="section section-dark">
     <div class="container">
@@ -214,27 +215,25 @@
       <!-- Filters -->
       <div class="filter-bar reveal-up">
         <button class="filter-btn active" data-filter="all">Toutes</button>
-        <button class="filter-btn" data-filter="informatique">Comptabilité</button>
-        <button class="filter-btn" data-filter="management">Bureautique</button>
-        <button class="filter-btn" data-filter="marketing">Suivi-evaluation</button>
-        <button class="filter-btn" data-filter="developpement">Google Workspace</button>
-        <button class="filter-btn" data-filter="bureautique">Formation sur l'IA</button>
-        <button class="filter-btn" data-filter="softskills">Management RH</button>
+        <button class="filter-btn" data-filter="comptabilite">Comptabilité</button>
+        <button class="filter-btn" data-filter="bureautique">Bureautique</button>
+        <button class="filter-btn" data-filter="suivi_evaluation">Suivi-évaluation</button>
+        <button class="filter-btn" data-filter="google_workspace">Google Workspace</button>
+        <button class="filter-btn" data-filter="ia">Formation sur l'IA</button>
+        <button class="filter-btn" data-filter="management_rh">Management RH</button>
       </div>
 
       <!-- Cards Grid -->
       <div class="formations-grid" id="formationsGrid">
 
         <!-- Card 1 -->
-        <div class="formation-card reveal-up" data-category="management">
+        <div class="formation-card reveal-up" data-category="comptabilite">
           <div class="card-header">
             <div class="card-cat">Comptabilité</div>
             <div class="card-level level-avance">Avancé</div>
           </div>
-          <h3 class="card-title">Maitrise comptabilite analytique</h3>
-          <p class="card-desc">Développez des compétences en comptabilité analytique pour une meilleure prise de décision.
-            Maitrise des logiciels Sari et Sage Paie.
-          </p>
+          <h3 class="card-title">Maîtrise comptable analytique</h3>
+          <p class="card-desc">Développez des compétences en comptabilité analytique pour une meilleure prise de décision et une lecture claire des coûts.</p>
           <div class="card-meta">
             <span class="meta-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -245,16 +244,16 @@
               Hybride
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('leadership')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('comptabilite_analytique')">Voir les détails →</button>
         </div>
 
         <!-- Card 2 -->
-        <div class="formation-card reveal-up" data-category="informatique">
+        <div class="formation-card reveal-up" data-category="bureautique">
           <div class="card-header">
             <div class="card-cat">Bureautique</div>
             <div class="card-level level-inter">Intermédiaire</div>
           </div>
-          <h3 class="card-title">Word, power point et excel</h3>
+          <h3 class="card-title">Word, PowerPoint et Excel</h3>
           <p class="card-desc">Maîtrisez les outils de bureautique pour optimiser votre productivité et améliorer la qualité de votre travail.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -266,17 +265,17 @@
               En ligne
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('dataanalytics')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('bureautique')">Voir les détails →</button>
         </div>
 
         <!-- Card 3 -->
-        <div class="formation-card reveal-up" data-category="marketing">
+        <div class="formation-card reveal-up" data-category="suivi_evaluation">
           <div class="card-header">
-            <div class="card-cat">Suivi et évaluation</div>
+            <div class="card-cat">Suivi-évaluation</div>
             <div class="card-level level-debutant">Débutant</div>
           </div>
-          <h3 class="card-title">KOBOTOOL BOX et MS PROJECT</h3>
-          <p class="card-desc">Apprenez à utiliser KOBOTOOL BOX et MS PROJECT pour gérer efficacement vos projets et suivre leur évolution.</p>
+          <h3 class="card-title">KoboToolbox & MS Project</h3>
+          <p class="card-desc">Apprenez à utiliser KoboToolbox et MS Project pour gérer efficacement vos projets et suivre leur évolution.</p>
           <div class="card-meta">
             <span class="meta-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -287,13 +286,13 @@
               Présentiel
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('marketing')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('suivi_evaluation')">Voir les détails →</button>
         </div>
 
         <!-- Card 4 -->
-        <div class="formation-card reveal-up" data-category="softskills">
+        <div class="formation-card reveal-up" data-category="google_workspace">
           <div class="card-header">
-            <div class="card-cat">Google workspace</div>
+            <div class="card-cat">Google Workspace</div>
             <div class="card-level level-inter">Intermédiaire</div>
           </div>
           <h3 class="card-title">Google Workspace</h3>
@@ -308,16 +307,16 @@
               Présentiel
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('communication')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('google_workspace')">Voir les détails →</button>
         </div>
 
         <!-- Card 5 -->
-        <div class="formation-card reveal-up" data-category="developpement">
+        <div class="formation-card reveal-up" data-category="ia">
           <div class="card-header">
-            <div class="card-cat">Formation logiciel IA</div>
+            <div class="card-cat">Formation sur l’IA</div>
             <div class="card-level level-debutant">Tous niveaux</div>
           </div>
-          <h3 class="card-title">Maitrise des logiciels IA</h3>
+          <h3 class="card-title">Maîtrise des logiciels IA</h3>
           <p class="card-desc">Apprenez à utiliser les logiciels d'intelligence artificielle pour automatiser vos tâches et améliorer votre productivité.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -329,7 +328,7 @@
               Hybride
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('stress')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('ia_outils')">Voir les détails →</button>
         </div>
 
         <!-- Card 6 -->
@@ -338,7 +337,7 @@
             <div class="card-cat">Bureautique</div>
             <div class="card-level level-inter">Intermédiaire</div>
           </div>
-          <h3 class="card-title">Excel Expert & Automatisation</h3>
+          <h3 class="card-title">Excel Expert & Automatisation VBA</h3>
           <p class="card-desc">Maîtrisez les fonctions avancées d'Excel, les tableaux croisés dynamiques et automatisez vos tâches avec les macros VBA.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -350,13 +349,13 @@
               En ligne
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('excel')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('excel_automatisation')">Voir les détails →</button>
         </div>
 
         <!-- Card 7 -->
-        <div class="formation-card reveal-up" data-category="informatique">
+        <div class="formation-card reveal-up" data-category="ia">
           <div class="card-header">
-            <div class="card-cat">Informatique</div>
+            <div class="card-cat">Intelligence artificielle</div>
             <div class="card-level level-avance">Avancé</div>
           </div>
           <h3 class="card-title">Intelligence Artificielle en Entreprise</h3>
@@ -371,13 +370,13 @@
               Hybride
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('ia')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('ia_entreprise')">Voir les détails →</button>
         </div>
 
         <!-- Card 8 -->
-        <div class="formation-card reveal-up" data-category="management">
+        <div class="formation-card reveal-up" data-category="management_rh">
           <div class="card-header">
-            <div class="card-cat">Management</div>
+            <div class="card-cat">Management RH</div>
             <div class="card-level level-avance">Avancé</div>
           </div>
           <h3 class="card-title">Gestion de Projet Agile</h3>
@@ -396,12 +395,12 @@
         </div>
 
         <!-- Card 9 -->
-        <div class="formation-card reveal-up" data-category="softskills">
+        <div class="formation-card reveal-up" data-category="management_rh">
           <div class="card-header">
-            <div class="card-cat">Soft Skills</div>
+            <div class="card-cat">Management RH</div>
             <div class="card-level level-debutant">Tous niveaux</div>
           </div>
-          <h3 class="card-title">Négociation & Influence</h3>
+          <h3 class="card-title">Négociation & Influence Professionnelle</h3>
           <p class="card-desc">Développez votre pouvoir de persuasion, maîtrisez les techniques de négociation et construisez des accords durables.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -568,7 +567,7 @@
 
         <div class="testimonial-card reveal-up">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"ELARA a formé toute notre équipe marketing sur 3 mois. Résultat : notre ROI digital a progressé de 60 %. Un investissement qui se rembourse très vite."</p>
+          <p class="testi-text">"Elite Consulting Group a formé toute notre équipe marketing sur 3 mois. Résultat : notre ROI digital a progressé de 60 %. Un investissement qui se rembourse très vite."</p>
           <div class="testi-author">
             <div class="testi-avatar">SL</div>
             <div>
@@ -599,7 +598,7 @@
     <div class="container">
       <div class="inscription-grid">
         <div class="inscription-left reveal-up">
-          <div class="section-eyebrow">Rejoindre ELARA</div>
+          <div class="section-eyebrow">Rejoindre Elite Consulting Group</div>
           <h2 class="section-title">Commencez votre <em>parcours</em> dès aujourd'hui</h2>
           <p>Remplissez ce formulaire, notre équipe vous contacte sous 24h pour personnaliser votre programme.</p>
           <div class="inscription-reassurance">
@@ -647,15 +646,15 @@
               <label for="formation">Formation souhaitée *</label>
               <select id="formation" name="formation">
                 <option value="">Sélectionner une formation</option>
-                <option value="leadership">Leadership & Management d'Équipe</option>
-                <option value="dataanalytics">Data Analytics & Power BI</option>
-                <option value="marketing">Marketing Digital & Réseaux Sociaux</option>
-                <option value="communication">Communication & Prise de Parole</option>
-                <option value="stress">Gestion du Stress & Bien-être</option>
-                <option value="excel">Excel Expert & Automatisation</option>
-                <option value="ia">Intelligence Artificielle en Entreprise</option>
-                <option value="agile">Gestion de Projet Agile</option>
-                <option value="negociation">Négociation & Influence</option>
+                <option value="comptabilite_analytique">Maîtrise comptable analytique</option>
+                <option value="bureautique">Word, PowerPoint et Excel</option>
+                <option value="suivi_evaluation">KoboToolbox & MS Project</option>
+                <option value="google_workspace">Google Workspace</option>
+                <option value="ia_outils">Maîtrise des logiciels IA</option>
+                <option value="excel_automatisation">Excel Expert & Automatisation VBA</option>
+                <option value="ia_entreprise">Intelligence Artificielle en Entreprise</option>
+                <option value="agile">Gestion de Projet Agile — Scrum & Kanban</option>
+                <option value="negociation">Négociation & Influence Professionnelle</option>
                 <option value="sur-mesure">Programme sur mesure</option>
               </select>
               <span class="form-error" id="formationError"></span>
@@ -768,7 +767,7 @@
     <div class="container">
       <div class="cta-final-content reveal-up">
         <h2>Prêt à franchir le cap ?</h2>
-        <p>Rejoignez les 2 400 professionnels qui ont fait confiance à ELARA Academy pour accélérer leur carrière.</p>
+        <p>Rejoignez les 2 400 professionnels qui ont fait confiance à Elite Consulting Group pour accélérer leur carrière.</p>
         <div class="cta-actions">
           <a href="#inscription" class="btn btn-primary">S'inscrire maintenant</a>
           <a href="tel:+33123456789" class="btn btn-ghost-light">
@@ -850,7 +849,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <span>© 2025 ELARA Academy. Tous droits réservés.</span>
+        <span>© 2025 Elite Consulting Group. Tous droits réservés.</span>
         <div class="footer-legal">
           <a href="#">Mentions légales</a>
           <a href="#">Politique de confidentialité</a>
