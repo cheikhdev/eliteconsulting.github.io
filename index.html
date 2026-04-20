@@ -28,7 +28,7 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
         <span class="logo-mark">E</span>
-        <span class="logo-text">Lite <em>Consulting Group</em></span>
+        <span class="logo-text">Elite <em>Consulting Group</em></span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">À propos</a></li>
@@ -202,7 +202,6 @@
     </div>
   </section>
 
-
   <!-- ===== FORMATIONS ===== -->
   <section id="formations" class="section section-dark">
     <div class="container">
@@ -215,25 +214,27 @@
       <!-- Filters -->
       <div class="filter-bar reveal-up">
         <button class="filter-btn active" data-filter="all">Toutes</button>
-        <button class="filter-btn" data-filter="comptabilite">Comptabilité</button>
-        <button class="filter-btn" data-filter="bureautique">Bureautique</button>
-        <button class="filter-btn" data-filter="suivi_evaluation">Suivi-évaluation</button>
-        <button class="filter-btn" data-filter="google_workspace">Google Workspace</button>
-        <button class="filter-btn" data-filter="ia">Formation sur l'IA</button>
-        <button class="filter-btn" data-filter="management_rh">Management RH</button>
+        <button class="filter-btn" data-filter="informatique">Comptabilité</button>
+        <button class="filter-btn" data-filter="management">Bureautique</button>
+        <button class="filter-btn" data-filter="marketing">Suivi-evaluation</button>
+        <button class="filter-btn" data-filter="developpement">Google Workspace</button>
+        <button class="filter-btn" data-filter="bureautique">Formation sur l'IA</button>
+        <button class="filter-btn" data-filter="softskills">Management RH</button>
       </div>
 
       <!-- Cards Grid -->
       <div class="formations-grid" id="formationsGrid">
 
         <!-- Card 1 -->
-        <div class="formation-card reveal-up" data-category="comptabilite">
+        <div class="formation-card reveal-up" data-category="management">
           <div class="card-header">
             <div class="card-cat">Comptabilité</div>
             <div class="card-level level-avance">Avancé</div>
           </div>
-          <h3 class="card-title">Maîtrise comptable analytique</h3>
-          <p class="card-desc">Développez des compétences en comptabilité analytique pour une meilleure prise de décision et une lecture claire des coûts.</p>
+          <h3 class="card-title">Maitrise comptabilite analytique</h3>
+          <p class="card-desc">Développez des compétences en comptabilité analytique pour une meilleure prise de décision.
+            Maitrise des logiciels Sari et Sage Paie.
+          </p>
           <div class="card-meta">
             <span class="meta-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -244,16 +245,16 @@
               Hybride
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('comptabilite_analytique')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('leadership')">Voir les détails →</button>
         </div>
 
         <!-- Card 2 -->
-        <div class="formation-card reveal-up" data-category="bureautique">
+        <div class="formation-card reveal-up" data-category="informatique">
           <div class="card-header">
             <div class="card-cat">Bureautique</div>
             <div class="card-level level-inter">Intermédiaire</div>
           </div>
-          <h3 class="card-title">Word, PowerPoint et Excel</h3>
+          <h3 class="card-title">Word, power point et excel</h3>
           <p class="card-desc">Maîtrisez les outils de bureautique pour optimiser votre productivité et améliorer la qualité de votre travail.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -265,17 +266,17 @@
               En ligne
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('bureautique')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('dataanalytics')">Voir les détails →</button>
         </div>
 
         <!-- Card 3 -->
-        <div class="formation-card reveal-up" data-category="suivi_evaluation">
+        <div class="formation-card reveal-up" data-category="marketing">
           <div class="card-header">
-            <div class="card-cat">Suivi-évaluation</div>
+            <div class="card-cat">Suivi et évaluation</div>
             <div class="card-level level-debutant">Débutant</div>
           </div>
-          <h3 class="card-title">KoboToolbox & MS Project</h3>
-          <p class="card-desc">Apprenez à utiliser KoboToolbox et MS Project pour gérer efficacement vos projets et suivre leur évolution.</p>
+          <h3 class="card-title">KOBOTOOL BOX et MS PROJECT</h3>
+          <p class="card-desc">Apprenez à utiliser KOBOTOOL BOX et MS PROJECT pour gérer efficacement vos projets et suivre leur évolution.</p>
           <div class="card-meta">
             <span class="meta-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -286,13 +287,13 @@
               Présentiel
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('suivi_evaluation')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('marketing')">Voir les détails →</button>
         </div>
 
         <!-- Card 4 -->
-        <div class="formation-card reveal-up" data-category="google_workspace">
+        <div class="formation-card reveal-up" data-category="softskills">
           <div class="card-header">
-            <div class="card-cat">Google Workspace</div>
+            <div class="card-cat">Google workspace</div>
             <div class="card-level level-inter">Intermédiaire</div>
           </div>
           <h3 class="card-title">Google Workspace</h3>
@@ -307,16 +308,16 @@
               Présentiel
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('google_workspace')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('communication')">Voir les détails →</button>
         </div>
 
         <!-- Card 5 -->
-        <div class="formation-card reveal-up" data-category="ia">
+        <div class="formation-card reveal-up" data-category="developpement">
           <div class="card-header">
-            <div class="card-cat">Formation sur l’IA</div>
+            <div class="card-cat">Formation logiciel IA</div>
             <div class="card-level level-debutant">Tous niveaux</div>
           </div>
-          <h3 class="card-title">Maîtrise des logiciels IA</h3>
+          <h3 class="card-title">Maitrise des logiciels IA</h3>
           <p class="card-desc">Apprenez à utiliser les logiciels d'intelligence artificielle pour automatiser vos tâches et améliorer votre productivité.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -328,7 +329,7 @@
               Hybride
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('ia_outils')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('stress')">Voir les détails →</button>
         </div>
 
         <!-- Card 6 -->
@@ -337,7 +338,7 @@
             <div class="card-cat">Bureautique</div>
             <div class="card-level level-inter">Intermédiaire</div>
           </div>
-          <h3 class="card-title">Excel Expert & Automatisation VBA</h3>
+          <h3 class="card-title">Excel Expert & Automatisation</h3>
           <p class="card-desc">Maîtrisez les fonctions avancées d'Excel, les tableaux croisés dynamiques et automatisez vos tâches avec les macros VBA.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -349,13 +350,13 @@
               En ligne
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('excel_automatisation')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('excel')">Voir les détails →</button>
         </div>
 
         <!-- Card 7 -->
-        <div class="formation-card reveal-up" data-category="ia">
+        <div class="formation-card reveal-up" data-category="informatique">
           <div class="card-header">
-            <div class="card-cat">Intelligence artificielle</div>
+            <div class="card-cat">Informatique</div>
             <div class="card-level level-avance">Avancé</div>
           </div>
           <h3 class="card-title">Intelligence Artificielle en Entreprise</h3>
@@ -370,13 +371,13 @@
               Hybride
             </span>
           </div>
-          <button class="card-btn" onclick="openFormationModal('ia_entreprise')">Voir les détails →</button>
+          <button class="card-btn" onclick="openFormationModal('ia')">Voir les détails →</button>
         </div>
 
         <!-- Card 8 -->
-        <div class="formation-card reveal-up" data-category="management_rh">
+        <div class="formation-card reveal-up" data-category="management">
           <div class="card-header">
-            <div class="card-cat">Management RH</div>
+            <div class="card-cat">Management</div>
             <div class="card-level level-avance">Avancé</div>
           </div>
           <h3 class="card-title">Gestion de Projet Agile</h3>
@@ -395,12 +396,12 @@
         </div>
 
         <!-- Card 9 -->
-        <div class="formation-card reveal-up" data-category="management_rh">
+        <div class="formation-card reveal-up" data-category="softskills">
           <div class="card-header">
-            <div class="card-cat">Management RH</div>
+            <div class="card-cat">Soft Skills</div>
             <div class="card-level level-debutant">Tous niveaux</div>
           </div>
-          <h3 class="card-title">Négociation & Influence Professionnelle</h3>
+          <h3 class="card-title">Négociation & Influence</h3>
           <p class="card-desc">Développez votre pouvoir de persuasion, maîtrisez les techniques de négociation et construisez des accords durables.</p>
           <div class="card-meta">
             <span class="meta-item">
@@ -455,76 +456,74 @@
         <p class="section-desc">Des professionnels actifs dans leur domaine, engagés dans la transmission.</p>
       </div>
       <div class="team-grid">
-
         <div class="team-card reveal-up">
           <div class="team-avatar">
-            <div class="avatar-initials">SM</div>
+            <div class="avatar-initials">MS</div>
             <div class="avatar-ring"></div>
           </div>
           <div class="team-info">
-            <h3>Sophie Martin</h3>
-            <span class="team-role">Management & Leadership</span>
-            <p>15 ans d'expérience en direction d'équipes. Ex-DRH Groupe BNP. Coach certifiée ICF.</p>
+            <h3>Mr SENGHOR</h3>
+            <span class="team-role">Consultant Digital & Designer</span>
+            <p>Spécialiste de la stratégie digitale, du design et de la création d’expériences visuelles modernes.</p>
             <div class="team-tags">
-              <span>Management</span>
-              <span>RH</span>
-              <span>Coaching</span>
+              <span>Digital</span>
+              <span>Design</span>
+              <span>UI/UX</span>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal-up">
           <div class="team-avatar">
-            <div class="avatar-initials">KB</div>
+            <div class="avatar-initials">MF</div>
             <div class="avatar-ring"></div>
           </div>
           <div class="team-info">
-            <h3>Karim Benali</h3>
-            <span class="team-role">Data & Intelligence Artificielle</span>
-            <p>Expert Data Science, ancien Google. PhD en machine learning. 12 ans en entreprise.</p>
+            <h3>Mr Mor FAYE</h3>
+            <span class="team-role">Comptable</span>
+            <p>Expert en comptabilité et suivi des opérations financières, avec une approche rigoureuse et pédagogique.</p>
             <div class="team-tags">
-              <span>IA</span>
-              <span>Data</span>
-              <span>Python</span>
+              <span>Comptabilité</span>
+              <span>Gestion</span>
+              <span>Analyse</span>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal-up">
           <div class="team-avatar">
-            <div class="avatar-initials">AL</div>
+            <div class="avatar-initials">AA</div>
             <div class="avatar-ring"></div>
           </div>
           <div class="team-info">
-            <h3>Amélie Lefèvre</h3>
-            <span class="team-role">Marketing & Communication</span>
-            <p>Fondatrice d'agence digitale, 200+ projets accompagnés. Conférencière TEDx.</p>
+            <h3>Mr AYA</h3>
+            <span class="team-role">Consultant Suivi & Évaluation</span>
+            <p>Spécialiste du suivi-évaluation des projets, de la collecte de données au reporting de performance.</p>
             <div class="team-tags">
-              <span>SEO</span>
-              <span>Social</span>
-              <span>Stratégie</span>
+              <span>Suivi-Évaluation</span>
+              <span>Reporting</span>
+              <span>M&amp;E</span>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal-up">
           <div class="team-avatar">
-            <div class="avatar-initials">TR</div>
+            <div class="avatar-initials">MD</div>
             <div class="avatar-ring"></div>
           </div>
           <div class="team-info">
-            <h3>Thomas Renaud</h3>
-            <span class="team-role">Soft Skills & Développement</span>
-            <p>Psychologue du travail, spécialiste de la performance individuelle et collective.</p>
+            <h3>Mr Diallo</h3>
+            <span class="team-role">Comptable</span>
+            <p>Professionnel de la comptabilité, du contrôle des pièces et de la préparation des états financiers.</p>
             <div class="team-tags">
-              <span>Soft Skills</span>
-              <span>PNL</span>
-              <span>Mindfulness</span>
+              <span>Comptabilité</span>
+              <span>Audit</span>
+              <span>Finance</span>
             </div>
           </div>
         </div>
-
-      </div>
+</div>
     </div>
   </section>
 
@@ -646,15 +645,15 @@
               <label for="formation">Formation souhaitée *</label>
               <select id="formation" name="formation">
                 <option value="">Sélectionner une formation</option>
-                <option value="comptabilite_analytique">Maîtrise comptable analytique</option>
-                <option value="bureautique">Word, PowerPoint et Excel</option>
-                <option value="suivi_evaluation">KoboToolbox & MS Project</option>
-                <option value="google_workspace">Google Workspace</option>
-                <option value="ia_outils">Maîtrise des logiciels IA</option>
-                <option value="excel_automatisation">Excel Expert & Automatisation VBA</option>
-                <option value="ia_entreprise">Intelligence Artificielle en Entreprise</option>
-                <option value="agile">Gestion de Projet Agile — Scrum & Kanban</option>
-                <option value="negociation">Négociation & Influence Professionnelle</option>
+                <option value="leadership">Leadership & Management d'Équipe</option>
+                <option value="dataanalytics">Data Analytics & Power BI</option>
+                <option value="marketing">Marketing Digital & Réseaux Sociaux</option>
+                <option value="communication">Communication & Prise de Parole</option>
+                <option value="stress">Gestion du Stress & Bien-être</option>
+                <option value="excel">Excel Expert & Automatisation</option>
+                <option value="ia">Intelligence Artificielle en Entreprise</option>
+                <option value="agile">Gestion de Projet Agile</option>
+                <option value="negociation">Négociation & Influence</option>
                 <option value="sur-mesure">Programme sur mesure</option>
               </select>
               <span class="form-error" id="formationError"></span>
@@ -767,7 +766,7 @@
     <div class="container">
       <div class="cta-final-content reveal-up">
         <h2>Prêt à franchir le cap ?</h2>
-        <p>Rejoignez les 2 400 professionnels qui ont fait confiance à Elite Consulting Group pour accélérer leur carrière.</p>
+        <p>Rejoignez les 2 400 professionnels qui ont fait confiance à Elite Consulting Group Academy pour accélérer leur carrière.</p>
         <div class="cta-actions">
           <a href="#inscription" class="btn btn-primary">S'inscrire maintenant</a>
           <a href="tel:+33123456789" class="btn btn-ghost-light">
@@ -849,7 +848,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <span>© 2025 Elite Consulting Group. Tous droits réservés.</span>
+        <span>© 2025 Elite Consulting Group Academy. Tous droits réservés.</span>
         <div class="footer-legal">
           <a href="#">Mentions légales</a>
           <a href="#">Politique de confidentialité</a>
