@@ -1,5 +1,5 @@
 /* ============================================================
-   ELARA ACADEMY — JavaScript
+   Elite Consulting Group ACADEMY — JavaScript
    ============================================================ */
 
 /* ===== LOADER ===== */
@@ -151,125 +151,251 @@ styleEl.textContent = `@keyframes cardReveal { from { opacity:0; transform:trans
 document.head.appendChild(styleEl);
 
 /* ===== FORMATION MODAL DATA ===== */
+
 const formationsData = {
-  leadership: {
-    cat: 'Management',
-    title: 'Leadership & Management d\'Équipe',
-    objectifs: ['Développer son style de leadership authentique', 'Maîtriser les outils de pilotage de la performance', 'Gérer les situations de conflits et de crise', 'Construire une vision inspirante et fédératrice'],
-    public: 'Managers en poste, chefs de projet, directeurs souhaitant renforcer leur leadership.',
-    prerequis: 'Avoir au moins 2 ans d\'expérience en management d\'équipe.',
-    programme: ['Jour 1 : Styles de leadership et auto-diagnostic', 'Jour 2 : Communication managériale et feedback', 'Jour 3 : Gestion des conflits et médiation', 'Jour 4 : Pilotage de la performance et OKR', 'Jour 5 : Vision, culture d\'équipe et mise en pratique'],
-    resultats: ['Certification Leadership ELARA délivrée', 'Plan de développement personnel individualisé', 'Accès à la communauté alumni managers'],
+  comptabilite_analytique: {
+    cat: 'Comptabilité',
+    title: 'Maîtrise comptable analytique',
+    objectifs: [
+      'Comprendre les bases de la comptabilité analytique',
+      'Analyser les coûts et les centres de responsabilité',
+      'Construire des tableaux de suivi pertinents',
+      'Améliorer la prise de décision avec des indicateurs fiables'
+    ],
+    public: 'Comptables, assistants de gestion, contrôleurs de gestion et responsables administratifs.',
+    prerequis: 'Connaissances de base en comptabilité générale.',
+    programme: [
+      'Jour 1 : Fondamentaux de la comptabilité analytique',
+      'Jour 2 : Méthodes de calcul des coûts et des marges',
+      'Jour 3 : Cas pratiques et construction d’outils de pilotage',
+      'Jour 4 : Lecture des résultats et aide à la décision',
+      'Jour 5 : Atelier de mise en application sur vos cas réels'
+    ],
+    resultats: [
+      'Savoir exploiter des données comptables pour piloter l’activité',
+      'Remise d’un support de synthèse pratique',
+      'Attestation de participation délivrée'
+    ],
     duree: '5 jours (35h)',
     modalite: 'Hybride',
     niveau: 'Avancé',
-    prix: 'À partir de 2 890 € HT'
+    prix: 'À partir de 1 990 € HT'
   },
-  dataanalytics: {
-    cat: 'Informatique',
-    title: 'Data Analytics & Power BI',
-    objectifs: ['Maîtriser l\'interface Power BI Desktop et Service', 'Créer des modèles de données relationnels', 'Développer des visualisations interactives percutantes', 'Automatiser les rapports et tableaux de bord'],
-    public: 'Contrôleurs de gestion, analystes, chefs de projet, directeurs data.',
-    prerequis: 'Maîtrise d\'Excel niveau intermédiaire. Aucune connaissance en programmation requise.',
-    programme: ['Jour 1 : Introduction à la BI, import et transformation des données', 'Jour 2 : Modélisation, relations et DAX fondamentaux', 'Jour 3 : Visualisations avancées, dashboards et publication'],
-    resultats: ['Création d\'un dashboard complet prêt à l\'emploi', 'Certification Microsoft Power BI préparée', 'Templates réutilisables remis'],
+  bureautique: {
+    cat: 'Bureautique',
+    title: 'Word, PowerPoint et Excel',
+    objectifs: [
+      'Maîtriser les fonctions essentielles de Word, PowerPoint et Excel',
+      'Gagner en rapidité et en efficacité au quotidien',
+      'Créer des documents professionnels et des présentations claires',
+      'Utiliser Excel pour des tableaux et calculs simples'
+    ],
+    public: 'Toute personne souhaitant renforcer ses bases bureautiques.',
+    prerequis: 'Aucun prérequis.',
+    programme: [
+      'Jour 1 : Word — mise en forme, styles et modèles',
+      'Jour 2 : PowerPoint — conception de présentations efficaces',
+      'Jour 3 : Excel — formules, tableaux et graphiques'
+    ],
+    resultats: [
+      'Meilleure maîtrise des outils bureautiques',
+      'Modèles réutilisables fournis',
+      'Attestation de fin de formation'
+    ],
     duree: '3 jours (21h)',
     modalite: 'En ligne',
     niveau: 'Intermédiaire',
-    prix: 'À partir de 1 490 € HT'
+    prix: 'À partir de 890 € HT'
   },
-  marketing: {
-    cat: 'Marketing',
-    title: 'Marketing Digital & Réseaux Sociaux',
-    objectifs: ['Construire une stratégie digitale 360°', 'Maîtriser les leviers SEO, SEA et Social Media', 'Créer du contenu engageant et viral', 'Mesurer et optimiser le ROI de ses actions'],
-    public: 'Responsables marketing, chargés de communication, entrepreneurs, créateurs de contenu.',
-    prerequis: 'Aucun prérequis technique. Connaissance basique des réseaux sociaux recommandée.',
-    programme: ['Jour 1 : Stratégie digitale et positionnement', 'Jour 2 : SEO, content marketing et copywriting', 'Jour 3 : Réseaux sociaux et publicité payante', 'Jour 4 : Analytics, mesure et optimisation'],
-    resultats: ['Plan marketing digital complet élaboré', 'Maîtrise des outils analytics', 'Certification Meta Blueprint préparée'],
+  suivi_evaluation: {
+    cat: 'Suivi-évaluation',
+    title: 'KoboToolbox & MS Project',
+    objectifs: [
+      'Collecter et structurer les données de suivi-évaluation',
+      'Créer des formulaires efficaces avec KoboToolbox',
+      'Planifier et suivre les projets avec MS Project',
+      'Produire des rapports de suivi clairs et exploitables'
+    ],
+    public: 'Chefs de projet, chargés de suivi-évaluation, ONG, consultants et coordinateurs.',
+    prerequis: 'Maîtrise de base de l’outil informatique.',
+    programme: [
+      'Jour 1 : Principes du suivi-évaluation',
+      'Jour 2 : Prise en main de KoboToolbox',
+      'Jour 3 : Planification et pilotage avec MS Project',
+      'Jour 4 : Tableaux de bord et reporting'
+    ],
+    resultats: [
+      'Formulaires de collecte prêts à l’emploi',
+      'Plan de projet structuré',
+      'Support de cours et exercices pratiques'
+    ],
     duree: '4 jours (28h)',
     modalite: 'Présentiel',
     niveau: 'Débutant',
-    prix: 'À partir de 1 890 € HT'
+    prix: 'À partir de 1 290 € HT'
   },
-  communication: {
-    cat: 'Soft Skills',
-    title: 'Communication & Prise de Parole',
-    objectifs: ['Prendre la parole en public avec confiance et impact', 'Structurer et délivrer des messages percutants', 'Gérer le stress et les émotions lors des interventions', 'Adapter sa communication à chaque contexte'],
-    public: 'Tout professionnel amené à prendre la parole en réunion, conférence ou présentation client.',
-    prerequis: 'Aucun prérequis. Ouverture d\'esprit et envie de progresser requises.',
-    programme: ['Jour 1 : Fondamentaux de la communication, voix et posture', 'Jour 2 : Structure d\'argumentation, storytelling et gestion du trac'],
-    resultats: ['Vidéo de progression avant/après remise', 'Grille d\'auto-évaluation personnalisée', 'Accès aux ressources en ligne 6 mois'],
-    duree: '2 jours (14h)',
-    modalite: 'Présentiel',
-    niveau: 'Intermédiaire',
-    prix: 'À partir de 890 € HT'
-  },
-  stress: {
-    cat: 'Développement personnel',
-    title: 'Gestion du Stress & Bien-être au Travail',
-    objectifs: ['Identifier ses sources de stress et ses mécanismes de réponse', 'Acquérir des outils concrets de gestion émotionnelle', 'Prévenir l\'épuisement professionnel', 'Cultiver un équilibre durable pro/perso'],
-    public: 'Tous professionnels, en particulier managers, soignants et personnes en situation de forte pression.',
+  google_workspace: {
+    cat: 'Google Workspace',
+    title: 'Google Workspace',
+    objectifs: [
+      'Maîtriser Gmail, Drive, Docs, Sheets et Meet',
+      'Collaborer efficacement en temps réel',
+      'Organiser et sécuriser les fichiers de l’entreprise',
+      'Automatiser des tâches simples dans l’écosystème Google'
+    ],
+    public: 'Collaborateurs, assistants, équipes administratives et managers.',
     prerequis: 'Aucun prérequis.',
-    programme: ['Jour 1 : Comprendre le stress, mindfulness et techniques de régulation', 'Jour 2 : Prévention du burn-out, énergie et plan d\'action personnel'],
-    resultats: ['Boîte à outils personnalisée anti-stress', 'Plan de bien-être individuel', 'Accès à l\'application partenaire de méditation'],
+    programme: [
+      'Jour 1 : Découverte des outils Google Workspace',
+      'Jour 2 : Collaboration et partage de documents',
+      'Jour 3 : Organisation, sécurité et bonnes pratiques',
+      'Jour 4 : Cas pratiques en équipe'
+    ],
+    resultats: [
+      'Meilleure collaboration interne',
+      'Fichiers et processus mieux organisés',
+      'Attestation de formation'
+    ],
+    duree: '2 jours (14h)',
+    modalite: 'Hybride',
+    niveau: 'Intermédiaire',
+    prix: 'À partir de 690 € HT'
+  },
+  ia_outils: {
+    cat: 'Formation sur l’IA',
+    title: 'Maîtrise des logiciels IA',
+    objectifs: [
+      'Découvrir les principaux outils d’intelligence artificielle',
+      'Automatiser des tâches répétitives',
+      'Rédiger des prompts efficaces',
+      'Intégrer l’IA dans les usages professionnels'
+    ],
+    public: 'Professionnels, entrepreneurs, assistants et équipes souhaitant gagner en productivité.',
+    prerequis: 'Aucun prérequis technique.',
+    programme: [
+      'Jour 1 : Introduction aux outils IA',
+      'Jour 2 : Rédaction de prompts et cas d’usage',
+      'Jour 3 : Automatisation de tâches et gain de temps'
+    ],
+    resultats: [
+      'Liste d’outils IA utiles au quotidien',
+      'Exercices guidés et cas concrets',
+      'Attestation de participation'
+    ],
     duree: '2 jours (14h)',
     modalite: 'Hybride',
     niveau: 'Tous niveaux',
     prix: 'À partir de 790 € HT'
   },
-  excel: {
+  excel_automatisation: {
     cat: 'Bureautique',
     title: 'Excel Expert & Automatisation VBA',
-    objectifs: ['Maîtriser les fonctions avancées et imbriquées d\'Excel', 'Créer des tableaux croisés dynamiques puissants', 'Automatiser des tâches répétitives avec les macros VBA', 'Concevoir des outils de gestion sur mesure'],
+    objectifs: [
+      'Maîtriser les fonctions avancées et imbriquées d’Excel',
+      'Créer des tableaux croisés dynamiques puissants',
+      'Automatiser des tâches répétitives avec les macros VBA',
+      'Concevoir des outils de gestion sur mesure'
+    ],
     public: 'Utilisateurs Excel intermédiaires souhaitant atteindre le niveau expert.',
-    prerequis: 'Maîtrise des bases d\'Excel (formules simples, mise en forme).',
-    programme: ['Jour 1 : Fonctions avancées, TCD et graphiques dynamiques', 'Jour 2 : Introduction à VBA, enregistrement et modification de macros', 'Jour 3 : Développement d\'outils automatisés et projet final'],
-    resultats: ['Certification MOS Excel Expert préparée', 'Fichiers projet récupérables', 'Support de cours complet'],
+    prerequis: 'Maîtrise des bases d’Excel (formules simples, mise en forme).',
+    programme: [
+      'Jour 1 : Fonctions avancées, TCD et graphiques dynamiques',
+      'Jour 2 : Introduction à VBA, enregistrement et modification de macros',
+      'Jour 3 : Développement d’outils automatisés et projet final'
+    ],
+    resultats: [
+      'Certification MOS Excel Expert préparée',
+      'Fichiers projet récupérables',
+      'Support de cours complet'
+    ],
     duree: '3 jours (21h)',
     modalite: 'En ligne',
     niveau: 'Intermédiaire',
     prix: 'À partir de 1 290 € HT'
   },
-  ia: {
-    cat: 'Informatique',
+  ia_entreprise: {
+    cat: 'Intelligence artificielle',
     title: 'Intelligence Artificielle en Entreprise',
-    objectifs: ['Comprendre les fondements et enjeux de l\'IA pour les décideurs', 'Identifier et qualifier les cas d\'usage IA dans son organisation', 'Piloter un projet d\'intégration IA avec des partenaires technologiques', 'Gérer les aspects éthiques, réglementaires et RH de l\'IA'],
-    public: 'Dirigeants, DSI, directeurs métier, chefs de projet souhaitant piloter la transformation IA.',
+    objectifs: [
+      'Comprendre les fondements et les enjeux de l’IA pour les décideurs',
+      'Identifier les cas d’usage adaptés à son organisation',
+      'Piloter un projet d’intégration IA avec méthode',
+      'Gérer les aspects éthiques, réglementaires et RH'
+    ],
+    public: 'Dirigeants, DSI, directeurs métier et chefs de projet souhaitant piloter la transformation IA.',
     prerequis: 'Aucune compétence technique en programmation requise.',
-    programme: ['Jour 1 : IA démystifiée — concepts clés et panorama du marché', 'Jour 2 : Identifier les opportunités IA dans son secteur', 'Jour 3 : Piloter un projet IA — méthodes, partenaires et budget', 'Jour 4 : Éthique, conformité RGPD et transformation des équipes'],
-    resultats: ['Feuille de route IA personnalisée', 'Réseau d\'experts IA ELARA accessible', 'Veille sectorielle IA pendant 12 mois'],
+    programme: [
+      'Jour 1 : IA démystifiée — concepts clés et panorama du marché',
+      'Jour 2 : Identifier les opportunités IA dans son secteur',
+      'Jour 3 : Piloter un projet IA — méthodes, partenaires et budget',
+      'Jour 4 : Éthique, conformité RGPD et transformation des équipes'
+    ],
+    resultats: [
+      'Feuille de route IA personnalisée',
+      'Réseau d’experts IA à disposition',
+      'Veille sectorielle pendant 12 mois'
+    ],
     duree: '4 jours (28h)',
     modalite: 'Hybride',
     niveau: 'Avancé',
     prix: 'À partir de 2 490 € HT'
   },
   agile: {
-    cat: 'Management',
+    cat: 'Management RH',
     title: 'Gestion de Projet Agile — Scrum & Kanban',
-    objectifs: ['Maîtriser les frameworks Scrum et Kanban', 'Prendre le rôle de Scrum Master ou Product Owner', 'Gérer des équipes en mode agile avec efficacité', 'Préparer et réussir les certifications PSM I & PSPO I'],
-    public: 'Chefs de projet, product managers, développeurs, managers souhaitant passer en mode agile.',
+    objectifs: [
+      'Maîtriser les frameworks Scrum et Kanban',
+      'Prendre le rôle de Scrum Master ou Product Owner',
+      'Gérer des équipes en mode agile avec efficacité',
+      'Préparer les certifications PSM I & PSPO I'
+    ],
+    public: 'Chefs de projet, product managers, développeurs et managers souhaitant passer en mode agile.',
     prerequis: 'Expérience en gestion de projet traditionnelle recommandée.',
-    programme: ['Jour 1 : Manifeste Agile, valeurs et principes fondateurs', 'Jour 2 : Framework Scrum — rôles, événements et artefacts', 'Jour 3 : Kanban, métriques agile et amélioration continue', 'Jour 4 : Simulations, études de cas et préparation certification', 'Jour 5 : Examen blanc, débriefing et plan d\'action'],
-    resultats: ['Passage des examens PSM I et PSPO I inclus', 'Accès à la plateforme Scrum.org', 'Certificat ELARA Agile Practitioner'],
+    programme: [
+      'Jour 1 : Manifeste Agile, valeurs et principes fondateurs',
+      'Jour 2 : Framework Scrum — rôles, événements et artefacts',
+      'Jour 3 : Kanban, métriques agiles et amélioration continue',
+      'Jour 4 : Simulations, études de cas et préparation certification',
+      'Jour 5 : Examen blanc, débriefing et plan d’action'
+    ],
+    resultats: [
+      'Passage des examens PSM I et PSPO I inclus',
+      'Accès à la plateforme Scrum.org',
+      'Certificat ELite Consulting Group Agile Practitioner'
+    ],
     duree: '5 jours (35h)',
     modalite: 'Présentiel',
     niveau: 'Avancé',
     prix: 'À partir de 2 990 € HT'
   },
   negociation: {
-    cat: 'Soft Skills',
+    cat: 'Management RH',
     title: 'Négociation & Influence Professionnelle',
-    objectifs: ['Maîtriser les techniques de négociation raisonnée (Harvard)', 'Développer son pouvoir de persuasion et d\'influence', 'Gérer les négociations difficiles et les blocages', 'Construire des accords durables gagnant-gagnant'],
-    public: 'Commerciaux, acheteurs, managers, juristes, tout professionnel en situation de négociation.',
+    objectifs: [
+      'Maîtriser les techniques de négociation raisonnée',
+      'Développer son pouvoir de persuasion et d’influence',
+      'Gérer les négociations difficiles et les blocages',
+      'Construire des accords durables gagnant-gagnant'
+    ],
+    public: 'Commerciaux, acheteurs, managers, juristes et tout professionnel en situation de négociation.',
     prerequis: 'Aucun prérequis.',
-    programme: ['Jour 1 : Fondamentaux de la négociation, BATNA et préparation', 'Jour 2 : Techniques d\'influence, psychologie de la persuasion', 'Jour 3 : Mises en situation filmées, débriefing et plan de progrès'],
-    resultats: ['Guide pratique de négociation personnalisé', 'Vidéos de simulation analysées', 'Accès au simulateur de négociation en ligne'],
+    programme: [
+      'Jour 1 : Fondamentaux de la négociation, BATNA et préparation',
+      'Jour 2 : Techniques d’influence et psychologie de la persuasion',
+      'Jour 3 : Mises en situation, débriefing et plan de progrès'
+    ],
+    resultats: [
+      'Guide pratique de négociation personnalisé',
+      'Vidéos de simulation analysées',
+      'Accès à un simulateur de négociation en ligne'
+    ],
     duree: '3 jours (21h)',
     modalite: 'Hybride',
     niveau: 'Tous niveaux',
     prix: 'À partir de 1 390 € HT'
   }
 };
+
 
 /* ===== OPEN MODAL ===== */
 function openFormationModal(id) {
@@ -522,4 +648,4 @@ if (heroSection) {
   heroSection.style.position = 'relative';
 }
 
-console.log('%cELARA Academy — Site chargé avec succès ✓', 'color:#C9A84C;font-family:Georgia;font-size:14px;font-style:italic;');
+console.log('%cElite Consulting Group — Site chargé avec succès ✓', 'color:#0B4EA1;font-family:Georgia;font-size:14px;font-style:italic;');
