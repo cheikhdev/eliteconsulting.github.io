@@ -1223,39 +1223,6 @@ body > #hero {
 .footer-legal a { font-size: 0.8rem; color: var(--text-light); text-decoration: none; transition: color var(--transition); }
 .footer-legal a:hover { color: var(--gold); }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-  .formations-grid { grid-template-columns: repeat(2, 1fr); }
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-visual { display: none; }
-}
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
-
-  #hero { padding: 6rem 2rem 3rem; }
-  .hero-stats { gap: 1.25rem; flex-wrap: wrap; }
-
-  .formations-grid { grid-template-columns: 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .team-grid { grid-template-columns: 1fr; }
-  .inscription-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .kpi-grid { grid-template-columns: 1fr 1fr; }
-  .modal { padding: 2rem; }
-  .cta-actions { flex-direction: column; align-items: center; }
-  .section { padding: 5rem 0; }
-}
-@media (max-width: 480px) {
-  .hero-title { font-size: 2.5rem; }
-  .hero-actions { flex-direction: column; }
-  .filter-bar { gap: 0.4rem; }
-  .filter-btn { font-size: 0.72rem; padding: 0.45rem 0.85rem; }
-}
-
 /* =========================
    RESPONSIVE GLOBAL FIX
    ========================= */
@@ -1335,4 +1302,5 @@ body > #hero {
     flex-direction: column;
     gap: 1rem;
   }
+
 }
