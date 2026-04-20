@@ -1,6 +1,6 @@
 /* ============================================================
-   ELARA ACADEMY — Premium Training Center CSS
-   Design: Refined Luxury / Editorial / Deep Navy + Gold
+   Elite Consulting Group ACADEMY — Premium Training Center CSS
+   Design: Refined Luxury / Editorial / Deep Navy + Blue
    ============================================================ */
 
 /* ===== DESIGN TOKENS ===== */
@@ -9,9 +9,9 @@
   --navy-mid:   #111827;
   --navy-light: #1a2540;
   --navy-card:  #162035;
-  --gold:       #C9A84C;
-  --gold-light: #E5C97A;
-  --gold-pale:  rgba(201,168,76,0.12);
+  --gold:       #0B4EA1;
+  --gold-light: #6FA0E0;
+  --gold-pale:  rgba(11,78,161,0.12);
   --cream:      #F8F4EE;
   --cream-dark: #EDE8DF;
   --text-dark:  #1a1a2e;
@@ -24,7 +24,7 @@
   --shadow-sm:  0 2px 12px rgba(0,0,0,0.08);
   --shadow-md:  0 8px 32px rgba(0,0,0,0.12);
   --shadow-lg:  0 24px 64px rgba(0,0,0,0.18);
-  --shadow-gold:0 8px 32px rgba(201,168,76,0.15);
+  --shadow-gold:0 8px 32px rgba(11,78,161,0.18);
   --r-sm:       8px;
   --r-md:       16px;
   --r-lg:       24px;
